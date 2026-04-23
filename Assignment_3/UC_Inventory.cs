@@ -1,14 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
+using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using System.Text.RegularExpressions;
-
+using System.Windows.Forms;
 
 namespace Assignment_3
 {
@@ -22,13 +18,12 @@ namespace Assignment_3
         // Inside UC_Inventory.cs
         private BindingList<Product> _inventoryList = new BindingList<Product>();
         private BindingSource _bindingSource = new BindingSource();
-        protected string PathToCSV = @"H:\Programming\VisualStudio\Assignment_3\shop-product-catalog.csv";
 
-
+        string filePath = "./shop-product-catalog.csv";
 
         private void UC_Inventory_Load(object sender, EventArgs e)
         {
-            string path = PathToCSV;
+            string path = filePath;
 
             // 1. Load the data into a temporary list
             var tempData = InventoryService.LoadFromCSV(path);
@@ -192,7 +187,7 @@ namespace Assignment_3
         {
             try
             {
-                string path = PathToCSV;
+                string path = filePath;
 
                 // Convert the BindingList to a standard List to pass to the service
                 List<Product> listToSave = _inventoryList.ToList();

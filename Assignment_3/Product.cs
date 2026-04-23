@@ -8,7 +8,7 @@ namespace Assignment_3
 {
     internal class Product
     {
-        // These names should be used in the DataPropertyName of your DataGridView columns
+        // These names must be used in the DataPropertyName of the DataGridView columns
         public int ProductID { get; set; }
         public string ProductName { get; set; }
         public string ProductBrand { get; set; }
