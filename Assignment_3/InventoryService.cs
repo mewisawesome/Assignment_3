@@ -20,7 +20,7 @@ namespace Assignment_3
             {
                 string[] parts = line.Split(',');
 
-                // Now checking for exactly 4 columns as per your new header
+                // Now checking for exactly 4 columns as per new header
                 if (parts.Length >= 4)
                 {
                     try
@@ -28,10 +28,9 @@ namespace Assignment_3
                         int id = int.Parse(parts[0]);
                         string name = parts[1];
                         string brand = parts[2];
-                        // Price is now at index 3. Divide by 100 if stored as cents.
                         decimal price = decimal.Parse(parts[3]) / 100m;
-
-                        // Since Quantity isn't in your new CSV yet, default it to 0
+                        
+                        // default quantity is 0
                         int quantity = 0;
 
                         products.Add(new Product(id, name, brand, price, quantity));
@@ -49,7 +48,7 @@ namespace Assignment_3
         {
             using (StreamWriter writer = new StreamWriter(filePath))
             {
-                // Match your new header exactly
+                // Match header exactly
                 writer.WriteLine("ProductID,ProductName,ProductBrand,Price,Quantity");
 
                 foreach (var p in products)
