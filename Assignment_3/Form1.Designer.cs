@@ -31,10 +31,11 @@
             this.components = new System.ComponentModel.Container();
             this.pnlContent = new System.Windows.Forms.Panel();
             this.pnlNav = new System.Windows.Forms.Panel();
-            this.btnHome = new System.Windows.Forms.Button();
-            this.btnInv = new System.Windows.Forms.Button();
             this.btnOrder = new System.Windows.Forms.Button();
+            this.btnInv = new System.Windows.Forms.Button();
+            this.btnHome = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.btnCheckOut = new System.Windows.Forms.Button();
             this.pnlNav.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,6 +52,7 @@
             // pnlNav
             // 
             this.pnlNav.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pnlNav.Controls.Add(this.btnCheckOut);
             this.pnlNav.Controls.Add(this.btnOrder);
             this.pnlNav.Controls.Add(this.btnInv);
             this.pnlNav.Controls.Add(this.btnHome);
@@ -59,26 +61,6 @@
             this.pnlNav.Name = "pnlNav";
             this.pnlNav.Size = new System.Drawing.Size(137, 681);
             this.pnlNav.TabIndex = 1;
-            // 
-            // btnHome
-            // 
-            this.btnHome.Location = new System.Drawing.Point(12, 55);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(111, 52);
-            this.btnHome.TabIndex = 0;
-            this.btnHome.Text = "Home";
-            this.btnHome.UseVisualStyleBackColor = true;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
-            // btnInv
-            // 
-            this.btnInv.Location = new System.Drawing.Point(12, 150);
-            this.btnInv.Name = "btnInv";
-            this.btnInv.Size = new System.Drawing.Size(111, 52);
-            this.btnInv.TabIndex = 1;
-            this.btnInv.Text = "Inventory";
-            this.btnInv.UseVisualStyleBackColor = true;
-            this.btnInv.Click += new System.EventHandler(this.btnInv_Click);
             // 
             // btnOrder
             // 
@@ -90,11 +72,41 @@
             this.btnOrder.UseVisualStyleBackColor = true;
             this.btnOrder.Click += new System.EventHandler(this.btnOrders_Click);
             // 
+            // btnInv
+            // 
+            this.btnInv.Location = new System.Drawing.Point(12, 150);
+            this.btnInv.Name = "btnInv";
+            this.btnInv.Size = new System.Drawing.Size(111, 52);
+            this.btnInv.TabIndex = 1;
+            this.btnInv.Text = "Inventory";
+            this.btnInv.UseVisualStyleBackColor = true;
+            this.btnInv.Click += new System.EventHandler(this.btnInv_Click);
+            // 
+            // btnHome
+            // 
+            this.btnHome.Location = new System.Drawing.Point(12, 55);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(111, 52);
+            this.btnHome.TabIndex = 0;
+            this.btnHome.Text = "Home";
+            this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
             // imageList1
             // 
             this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // btnCheckOut
+            // 
+            this.btnCheckOut.Location = new System.Drawing.Point(12, 347);
+            this.btnCheckOut.Name = "btnCheckOut";
+            this.btnCheckOut.Size = new System.Drawing.Size(111, 52);
+            this.btnCheckOut.TabIndex = 3;
+            this.btnCheckOut.Text = "Check Out";
+            this.btnCheckOut.UseVisualStyleBackColor = true;
+            this.btnCheckOut.Click += new System.EventHandler(this.btnCheckOut_Click);
             // 
             // Form1
             // 
@@ -119,6 +131,7 @@
         private System.Windows.Forms.Button btnInv;
         private System.Windows.Forms.Button btnHome;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Button btnCheckOut;
     }
 }
 

@@ -54,5 +54,10 @@ namespace Assignment_3
             newScreen.Dock = DockStyle.Fill;
             pnlContent.Controls.Add(newScreen);
         }
+
+        private void btnCheckOut_Click(object sender, EventArgs e)
+        {
+            ShowScreen(new UC_CheckOut());
+        }
     }
 }
