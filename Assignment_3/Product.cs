@@ -24,6 +24,5 @@ namespace Assignment_3
             ProductPrice = price;
             ProductQuantity = quantity;
         }
-
     }
 }

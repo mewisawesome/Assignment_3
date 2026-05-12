@@ -19,7 +19,7 @@ namespace Assignment_3
         private BindingList<Product> _inventoryList = new BindingList<Product>();
         private BindingSource _bindingSource = new BindingSource();
 
-        string filePath = "./shop-product-catalog.csv";
+        string filePath = "./product.csv";
 
         private void UC_Inventory_Load(object sender, EventArgs e)
         {
@@ -38,8 +38,6 @@ namespace Assignment_3
             // 3. Bind the BindingList to the grid
             dgvInventory.DataSource = _inventoryList;
         }
-
-      
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
