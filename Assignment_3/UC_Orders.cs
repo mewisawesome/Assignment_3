@@ -16,7 +16,7 @@ namespace Assignment_3
     {
         private BindingList<Product> _availableProducts;
         private BindingList<OrderItem> _currentOrderItems = new BindingList<OrderItem>();
-        private string _csvPath = "./shop-product-catalog.csv";
+        private string _csvPath = "./sproduct.csv";
 
         public UC_Orders()
         {

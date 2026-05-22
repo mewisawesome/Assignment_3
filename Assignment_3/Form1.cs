@@ -57,7 +57,12 @@ namespace Assignment_3
 
         private void btnCheckOut_Click(object sender, EventArgs e)
         {
-            ShowScreen(new UC_CheckOut());
+            PayArea f2 = new PayArea();
+            f2.Owner = this;
+            f2.StartPosition = FormStartPosition.Manual;
+            f2.Location = this.Location;
+            f2.Show();
+            this.Hide();
         }
     }
 }

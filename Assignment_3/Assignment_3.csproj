@@ -78,6 +78,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="OrderModel.cs" />
+    <Compile Include="Pay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pay.Designer.cs">
+      <DependentUpon>Pay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PayArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PayArea.Designer.cs">
+      <DependentUpon>PayArea.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_CheckOut.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -120,6 +132,12 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pay.resx">
+      <DependentUpon>Pay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PayArea.resx">
+      <DependentUpon>PayArea.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
