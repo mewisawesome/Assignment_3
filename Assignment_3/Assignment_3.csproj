@@ -90,6 +90,12 @@
     <Compile Include="PayArea.Designer.cs">
       <DependentUpon>PayArea.cs</DependentUpon>
     </Compile>
+    <Compile Include="purchase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="purchase.Designer.cs">
+      <DependentUpon>purchase.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_CheckOut.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -148,6 +154,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="purchase.resx">
+      <DependentUpon>purchase.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UC_CheckOut.resx">
       <DependentUpon>UC_CheckOut.cs</DependentUpon>
     </EmbeddedResource>
@@ -163,6 +172,9 @@
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Book.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

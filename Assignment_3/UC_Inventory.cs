@@ -19,7 +19,7 @@ namespace Assignment_3
         private BindingList<Product> _inventoryList = new BindingList<Product>();
         private BindingSource _bindingSource = new BindingSource();
 
-        string filePath = "./product.csv";
+        string filePath = "./Book.csv";
 
         private void UC_Inventory_Load(object sender, EventArgs e)
         {

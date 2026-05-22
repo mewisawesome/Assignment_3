@@ -1,6 +1,6 @@
 ﻿namespace Assignment_3
 {
-    partial class UC_CheckOut
+    partial class purchase
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,18 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // UC_CheckOut
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(146, 170);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(651, 165);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Thank you for purchasing \r\nyour order you can close this \r\nwindow now";
+            // 
+            // purchase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "UC_CheckOut";
-            this.Size = new System.Drawing.Size(595, 467);
+            this.Controls.Add(this.label1);
+            this.Name = "purchase";
+            this.Size = new System.Drawing.Size(1037, 571);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label1;
     }
 }

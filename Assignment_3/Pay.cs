@@ -37,7 +37,7 @@ namespace Assignment_3
 
         private void btnPurchase_Click(object sender, EventArgs e)
         {
-            ShowScreen(new Purchase());
+            
         }
         private void ShowScreen(UserControl newScreen)
         {
@@ -48,6 +48,11 @@ namespace Assignment_3
             pnlPay.Controls.Clear();
             newScreen.Dock = DockStyle.Fill;
             pnlPay.Controls.Add(newScreen);
+        }
+
+        private void btnPurchase_Click_1(object sender, EventArgs e)
+        {
+            ShowScreen(new purchase());
         }
     }
 }
